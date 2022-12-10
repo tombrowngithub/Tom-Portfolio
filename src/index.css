@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+
+}
+
+.header-background {
+    height: 80vh;
+    background: url("./images/Backgroundimage.jpg") no-repeat center center;
+    background-size: cover;
+    transition: 10s;
+
+    animation-name: animate;
+    animation-direction: normal;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: step-start;
+}
+
+@keyframes animate {
+    0% {
+        background: url("./images/Backgroundimage.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    20% {
+        background: url("./images/bg1.jpg") no-repeat center center;
+        background-size: cover;
+
+    }
+    40% {
+        background: url("./images/bg2.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    60% {
+        background: url("./images/bg4.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    80% {
+        background: url("./images/bg5.png") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.my-bg-con {
+    margin-top: 5rem;
+}
+
+.brandText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.text-center {
+    font-weight: 800;
+    width: 15rem;
+    border: #ea5271 3px solid;
+    color: #ea5271;
+}
+
+.simple {
+    border-top: darkblue 3px solid;
+    border-left: darkblue 3px solid;
+    border-right: darkblue 3px solid;
+    color: #FFF23D;
+    text-shadow: black;
+    font-weight: 600;
+}
+
+.intro {
+    background-size: 300px 350px;
+    color: #ea5271;
+}
+
+.whatIdo-bg {
+    background: #eff0f4;
+}
+
+.my-whatIdo-text {
+    text-align: center;
+}
+
+.portfolio-img-mobile {
+    display: none;
+}
+
+.portfolio-img img {
+    width: 15rem;
+    height: 20rem;
+}
+
+/*--------------------------- Water drop effect -------*/
+.my-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 40px 40px;
+}
+
+.my-container .drop {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+}
+
+.my-container .drop:nth-child(1) {
+    border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+}
+
+.my-container .drop:nth-child(2) {
+    border-radius: 43% 53% 59% 31% / 37% 59% 41% 43%;
+}
+
+.my-container .drop:nth-child(3) {
+    border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
+}
+
+.my-container .drop:hover {
+    border-radius: 50%;
+}
+
+.my-container .drop::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.container .drop::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.my-container .drop .my-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.my-container .drop .my-content h4 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: rgba(224, 224, 218, 0.2);
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #ff0f5b;
+}
+
+.my-container .drop .my-content a {
+    position: relative;
+    padding: 10px 25px;
+    background: #be01fe;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.025);
+
+}
+
+/*-------------------------------Mobile layout--------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 325px) and (max-width: 425px) {
+    .portfolio-img {
+        display: none;
+    }
+
+    .header-background {
+        width: 100%;
+        height: 50vh;
+        background: url("./images/Backgroundimage.jpg") no-repeat center center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .portfolio-img-mobile {
+        margin-top: -5rem;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+    }
+
+    .portfolio-img-mobile img {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .brandText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-bg-con {
+        margin: 13rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .my-text-header-container h4 {
+        text-align: center;
+    }
+
+    .skill-con {
+        background-color: darkslategrey;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-text {
+        margin-top: 1rem;
+    }
+
+    /*----------------------------Header section end--------------------------------------------*/
+    .whatIdo-bg {
+        margin-top: 45rem;
+        position: absolute;
+    }
+    .my-container{
+        margin-top: -2.7rem;
+    }
+    .my-container .drop {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+    }
+
+    .my-content h4 {
+        margin-top: -2.2rem;
+    }
+
+    .my-content p {
+        margin-top: -1rem;
+        text-align: center;
+        font-size: 0.855em;
+    }
+
+    .my-content a {
+        padding: 10px 25px;
+        background: #be01fe;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 25px;
+        font-size: 0.7em;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.025);
+    }
+    .con-extra a{
+        margin-top: -1.5rem;
+    }
+
+    .my-container .drop:nth-child(1) {
+        border-radius: 50%;
+    }
+
+    .my-container .drop:nth-child(2) {
+        border-radius: 50%;
+        margin-top: -1rem;
+    }
+
+    .my-container .drop:nth-child(3) {
+        border-radius: 50%;
+        margin-top: -1rem;
+    }
+
+    .contact-us-con{
+        position: absolute;
+        bottom: -130rem;
+    }
+    .contact-con{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copy-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copy-right p{
+        text-align: center;
+        font-size: 0.7em;
+    }
+}
