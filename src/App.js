@@ -6,7 +6,7 @@ import ContactMe from "./components/ContactMe";
 function App() {
     return (
         <div className="App bg-dark">
-            <div className='header-background bg-dark'>
+            <div className='header-background bg-dark lg:header-background'>
             </div>
             <Header/>
             <WhatIDo/>
