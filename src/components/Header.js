@@ -37,7 +37,7 @@ export default function Header() {
                         </h6>
                     </div>
 
-                    <div className="portfolio-img w-[1080px] mt-20">
+                    <div className="portfolio-img">
                         <img src={PortfolioImg} alt="/"/>
                     </div>
 
