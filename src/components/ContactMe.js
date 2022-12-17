@@ -31,34 +31,34 @@ export default function ContactMe() {
 
 
     return (
-        <div className="bg-dark text-light contact-us-con">
+        <footer className="bg-dark text-light contact-us-con">
             <h2 className="d-flex justify-content-center shadow">CONTACT ME</h2>
             <div className="bg-dark text-light d-flex contact-con">
-                <Container className="d-flex flex-column">
-                    <div>
+                <Container className="flex flex-column">
+                    <div className="flex items-center gap-2">
                         <img src={whatsappIcon} style={{width: "1.5rem"}} alt=""/>
                         <span> +2347064676627 </span>
                     </div>
 
-                    <div className="mt-3">
+                    <div className="mt-3 flex items-center gap-2">
                         <img src={emailIcon} style={{width: "1.5rem"}} alt=""/>
                         <span> tombrownanuma@gmail.com</span>
                     </div>
 
-                    <div className="mt-3">
+                    <div className="mt-3 flex items-center gap-2">
                         <img src={facebookIcon} style={{width: "1.5rem"}} alt=""/>
                         <span> <a style={{textDecoration: 'none', color: "white"}}
                                   href="https://www.facebook.com/tombrown.anuma2">My Facebook</a></span>
 
                     </div>
 
-                    <div className="mt-3">
+                    <div className="mt-3 flex items-center gap-2">
                         <img src={myCVIcon} style={{width: "1.5rem"}} alt=""/>
                         <a style={{textDecoration: 'none', color: "white"}} href={myCV}><Button className="rounded-3">Download
                             CV</Button> </a>
                     </div>
                 </Container>
-                     <hr/>
+                <hr/>
                 <Container>
                     <Form ref={form} onSubmit={sendEmail}>
                         <FormControl
@@ -98,6 +98,6 @@ export default function ContactMe() {
                 </p>
 
             </div>
-        </div>
+        </footer>
     )
 }
