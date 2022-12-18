@@ -9,64 +9,17 @@
     font-family: poppins, sans-serif;
 }
 
-.App {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .header-background2 {
-    position: relative;
-
+    /*position: absolute;*/
 }
 
-.header-background {
-    position: absolute;
-    height: 67vh;
-    /*background: url("./images/Backgroundimage.jpg") no-repeat center center;*/
-    /*background-size: cover;*/
-    transition: 5s;
 
-    animation-name: animate;
-    animation-direction: normal;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: step-start;
-}
 
-@keyframes animate {
-    10% {
-        background: url("./images/Backgroundimage.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    20% {
-        background: url("./images/bg1.jpg") no-repeat center center;
-        background-size: cover;
-
-    }
-    40% {
-        background: url("./images/bg2.jpg") no-repeat center center;
-        background-size: cover;
-    }
-
-    60% {
-        background: url("./images/bg4.jpg") no-repeat center center;
-        background-size: cover;
-    }
-    80% {
-        background: url("./images/bg5.png") no-repeat center center;
-        background-size: cover;
-    }
-    100% {
-        background: url("./images/bg6.png") no-repeat center center;
-        background-size: cover;
-    }
-}
 
 /*.my-bg-con {*/
-/*    margin-top: -2rem;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
 /*}*/
 
 .brandText {
@@ -239,11 +192,54 @@
     }
 
     .header-background {
+        position: absolute;
         width: 100%;
         height: 40vh;
+
+        background: url("./images/Backgroundimage.jpg") no-repeat center center;
+        background-size: cover;
+        transition: 5s;
+
+        animation-name: animate;
+        animation-direction: normal;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: step-start;
+    }
+
+    @keyframes animate {
+        10% {
+            background: url("./images/Backgroundimage.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        20% {
+            background: url("./images/bg1.jpg") no-repeat center center;
+            background-size: cover;
+
+        }
+        40% {
+            background: url("./images/bg2.jpg") no-repeat center center;
+            background-size: cover;
+        }
+
+        60% {
+            background: url("./images/bg4.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        80% {
+            background: url("./images/bg5.png") no-repeat center center;
+            background-size: cover;
+        }
+        100% {
+            background: url("./images/bg6.png") no-repeat center center;
+            background-size: cover;
+        }
     }
 
     .portfolio-img-mobile {
+        position: relative;
         display: flex;
         justify-content: start;
         /*margin-top: -4.5rem;*/
@@ -285,7 +281,7 @@
 
     .whatIdo-bg {
         /*margin-top: 810px;*/
-        /*position: absolute;*/
+        /*position: relative;*/
     }
 
     .my-container {
@@ -376,6 +372,48 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
+    .header-background2 {
+        height: 67vh;
+        /*background: url("./images/Backgroundimage.jpg") no-repeat center center;*/
+        background-size: cover;
+        transition: 5s;
 
+        animation-name: animate;
+        animation-direction: normal;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: step-start;
+    }
+
+    @keyframes animate {
+        10% {
+            background: url("./images/Backgroundimage.jpg") no-repeat center center;
+            background-size: contain;
+        }
+        20% {
+            background: url("./images/bg1.jpg") no-repeat center center;
+            background-size: contain;
+
+        }
+        40% {
+            background: url("./images/bg2.jpg") no-repeat center center;
+            background-size: contain;
+        }
+
+        60% {
+            background: url("./images/bg4.jpg") no-repeat center center;
+            background-size: contain;
+        }
+        80% {
+            background: url("./images/bg5.png") no-repeat center center;
+            background-size: contain;
+        }
+        100% {
+            background: url("./images/bg6.png") no-repeat center center;
+            background-size: contain;
+        }
+    }
 }
