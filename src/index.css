@@ -9,19 +9,6 @@
     font-family: poppins, sans-serif;
 }
 
-.header-background2 {
-    /*position: absolute;*/
-}
-
-
-
-
-/*.my-bg-con {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-between;*/
-/*}*/
-
 .brandText {
     display: flex;
     flex-direction: column;
@@ -62,10 +49,10 @@
     display: none;
 }
 
-.portfolio-img img {
+/* .portfolio-img img {
    width: 15rem;
    height: 20rem;
-}
+} */
 
 /*--------------------------- Water drop effect -------*/
 .my-container {
