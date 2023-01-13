@@ -4,7 +4,7 @@ import whatsappIcon from '../images/whatsapp.svg'
 import emailIcon from '../images/email.svg'
 import facebookIcon from '../images/facebook.svg'
 import myCVIcon from '../images/pdfIcon.svg'
-import myCV from '../images/Thomas Anuma CV.pdf'
+import myCV from '../images/Anuma Thomas CV.pdf'
 import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 

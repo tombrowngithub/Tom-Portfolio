@@ -62,10 +62,10 @@
     display: none;
 }
 
-.portfolio-img img {
-   width: 15rem;
-   height: 20rem;
-}
+/*.portfolio-img img {*/
+/*   width: 15rem;*/
+/*   height: 20rem;*/
+/*}*/
 
 /*--------------------------- Water drop effect -------*/
 .my-container {
@@ -257,6 +257,7 @@
     }
 
     .my-bg-con {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
