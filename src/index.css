@@ -9,19 +9,6 @@
     font-family: poppins, sans-serif;
 }
 
-.header-background2 {
-    /*position: absolute;*/
-}
-
-
-
-
-/*.my-bg-con {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-between;*/
-/*}*/
-
 .brandText {
     display: flex;
     flex-direction: column;
@@ -29,12 +16,12 @@
     align-items: start;
 }
 
-.text-center {
-    font-weight: 800;
-    width: 15rem;
-    border: #ea5271 3px solid;
-    color: #ea5271;
-}
+/*.text-center {*/
+/*    font-weight: 800;*/
+/*    width: 15rem;*/
+/*    border: #ea5271 3px solid;*/
+/*    color: #ea5271;*/
+/*}*/
 
 .simple {
     border-top: darkblue 3px solid;
@@ -62,10 +49,12 @@
     display: none;
 }
 
-/*.portfolio-img img {*/
-/*   width: 15rem;*/
-/*   height: 20rem;*/
-/*}*/
+.portfolio-img img {
+    width: 35rem;
+    height: 25rem;
+    object-fit: contain;
+    margin-top: -70px;
+}
 
 /*--------------------------- Water drop effect -------*/
 .my-container {
@@ -197,7 +186,8 @@
         height: 40vh;
 
         background: url("./images/Backgroundimage.jpg") no-repeat center center;
-        background-size: cover;
+        background-size: contain;
+        object-fit: cover;
         transition: 5s;
 
         animation-name: animate;
@@ -212,29 +202,36 @@
     @keyframes animate {
         10% {
             background: url("./images/Backgroundimage.jpg") no-repeat center center;
-            background-size: cover;
+            object-fit: cover;
+            background-size: contain;
+
         }
         20% {
             background: url("./images/bg1.jpg") no-repeat center center;
-            background-size: cover;
+            object-fit: cover;
+            background-size: contain;
 
         }
         40% {
             background: url("./images/bg2.jpg") no-repeat center center;
-            background-size: cover;
+            object-fit: cover;
+            background-size: contain;
         }
 
         60% {
             background: url("./images/bg4.jpg") no-repeat center center;
-            background-size: cover;
+            background-size: contain;
+            object-fit: cover;
         }
         80% {
             background: url("./images/bg5.png") no-repeat center center;
-            background-size: cover;
+            background-size: contain;
+            object-fit: cover;
         }
         100% {
             background: url("./images/bg6.png") no-repeat center center;
-            background-size: cover;
+            background-size: contain;
+            object-fit: cover;
         }
     }
 
@@ -375,9 +372,10 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 2560px) {
     .header-background2 {
-        height: 67vh;
+        height: 100vh;
         /*background: url("./images/Backgroundimage.jpg") no-repeat center center;*/
         background-size: cover;
+        object-fit: cover;
         transition: 5s;
 
         animation-name: animate;
@@ -393,28 +391,34 @@
         10% {
             background: url("./images/Backgroundimage.jpg") no-repeat center center;
             background-size: contain;
+            object-fit: cover;
         }
         20% {
             background: url("./images/bg1.jpg") no-repeat center center;
             background-size: contain;
+            object-fit: cover;
 
         }
         40% {
             background: url("./images/bg2.jpg") no-repeat center center;
             background-size: contain;
+            object-fit: cover;
         }
 
         60% {
             background: url("./images/bg4.jpg") no-repeat center center;
             background-size: contain;
+            object-fit: cover;
         }
         80% {
             background: url("./images/bg5.png") no-repeat center center;
             background-size: contain;
+            object-fit: cover;
         }
         100% {
             background: url("./images/bg6.png") no-repeat center center;
             background-size: contain;
+            object-fit: cover;
         }
     }
 }

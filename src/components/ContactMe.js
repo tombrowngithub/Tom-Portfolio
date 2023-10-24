@@ -3,8 +3,9 @@ import 'font-awesome/css/font-awesome.min.css';
 import whatsappIcon from '../images/whatsapp.svg'
 import emailIcon from '../images/email.svg'
 import facebookIcon from '../images/facebook.svg'
+import github from '../images/github.svg'
 import myCVIcon from '../images/pdfIcon.svg'
-import myCV from '../images/Anuma Thomas CV.pdf'
+import myCV from '../images/AnumaThomas.pdf'
 import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -48,8 +49,15 @@ export default function ContactMe() {
                     <div className="mt-3 flex items-center gap-2">
                         <img src={facebookIcon} style={{width: "1.5rem"}} alt=""/>
                         <span> <a style={{textDecoration: 'none', color: "white"}}
-                                  href="https://www.facebook.com/tombrown.anuma2">My Facebook</a></span>
+                                  href="https://www.facebook.com/tombrown.anuma2">Facebook</a>
+                        </span>
+                    </div>
 
+                    <div className="mt-3 flex items-center gap-2">
+                        <img src={github} style={{width: "1.5rem"}} alt=""/>
+                        <span> <a style={{textDecoration: 'none', color: "white"}}
+                                  href="https://github.com/tombrowngithub">GitHub</a>
+                        </span>
                     </div>
 
                     <div className="mt-3 flex items-center gap-2">
