@@ -16,12 +16,6 @@
     align-items: start;
 }
 
-/*.text-center {*/
-/*    font-weight: 800;*/
-/*    width: 15rem;*/
-/*    border: #ea5271 3px solid;*/
-/*    color: #ea5271;*/
-/*}*/
 
 .simple {
     border-top: darkblue 3px solid;
@@ -100,6 +94,22 @@
 .my-container .drop:nth-child(6) {
     border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
 }
+.my-container .drop:nth-child(7) {
+    border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
+}
+.my-container .drop:nth-child(8) {
+    border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
+}
+.my-container .drop:nth-child(9) {
+    border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
+}
+.my-container .drop:nth-child(10) {
+    border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
+}
+.my-container .drop:nth-child(11) {
+    border-radius: 63% 33% 59% 41% / 57% 59% 41% 43%;
+}
+
 
 .my-container .drop:hover {
     border-radius: 50%;

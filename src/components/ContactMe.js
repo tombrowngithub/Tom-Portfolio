@@ -56,7 +56,7 @@ export default function ContactMe() {
                     <div className="mt-3 flex items-center gap-2">
                         <img src={github} style={{width: "1.5rem"}} alt=""/>
                         <span> <a style={{textDecoration: 'none', color: "white"}}
-                                  href="https://github.com/tombrowngithub">GitHub</a>
+                                  href="https://github.com/tombrowngithub">GitHub: 50% of my repositories are hidden</a>
                         </span>
                     </div>
 

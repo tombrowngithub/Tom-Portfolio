@@ -18,6 +18,17 @@ export default function WhatIDo() {
                 <div className="drop">
                     <div className="my-content">
                         <h4>TOM-DevA</h4>
+                        <p>MultiInkTrading is a distinguished entity in the realm of commodity trading, specializing in
+                            the procurement and distribution of precious metals, with a primary focus on gold and
+                            various other mineral resources.
+                        </p>
+                        <a href="https://multilinktradings.com/">View</a>
+                    </div>
+                </div>
+
+                <div className="drop">
+                    <div className="my-content">
+                        <h4>TOM-DevA</h4>
                         <p>Bems Institute Of Technology and Vocational Study. A fully working school site where users
                             can pick a course and study
                             either online or onsite. With the certification of completion. Built with HTML, CSS and
@@ -42,6 +53,16 @@ export default function WhatIDo() {
                         <p>Explore Glide. A blogging site with a various categories of searchable content for news and
                             updates. Developed with plain html css javascript and firebase as its database and auth</p>
                         <a href="https://exploreglide.com">View</a>
+                    </div>
+                </div>
+
+                <div className="drop">
+                    <div className="my-content">
+                        <h4>TOM-DevA</h4>
+                        <p>Shopify client dashboard, a hackathon project I participated in last year. The aim was to
+                            build a site which has accessibility for keyboard, screen and mouse users, fully responsive
+                            for mobile and desktop alone. Built with plain HTML, CSS and JavaScript</p>
+                        <a href="https://master--hacktom.netlify.app/">View</a>
                     </div>
                 </div>
 
